@@ -5,6 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
 
 body {
+  background-color: hsl(185, 41%, 84%);
   margin: 0;
   font-family: 'Space Mono';
   -webkit-font-smoothing: antialiased;
