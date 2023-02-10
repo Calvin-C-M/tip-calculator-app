@@ -1,4 +1,3 @@
-import "./App.css"
 import Logo from "./images/logo.svg"
 import Dollar from "./images/icon-dollar.svg"
 import Person from "./images/icon-person.svg"
