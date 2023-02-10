@@ -18,7 +18,7 @@ function App() {
     const finalBill = parseFloat(bill) + parseFloat(tip)
     setTotal((finalBill / people).toFixed(2))
     setTipAmount((tip / people).toFixed(2))    
-  })
+  },[bill,tips,people])
 
   const handleReset = () => {
     setBill(0.0)
