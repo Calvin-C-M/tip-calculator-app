@@ -85,7 +85,14 @@ function App() {
             </ul>
           </div>
           <div className="mb-5 flex flex-col">
-            <label htmlFor="bill">Number of People</label>
+            <label htmlFor="bill" className="flex justify-between items-center">
+              <span>Number of People</span>
+              {
+                (people <= 0) ?
+                <span className="text-red-500 text-xs">Can't be zero</span> :
+                ""
+              }
+            </label>
             <div className="relative">
               <img 
                 src={Person} 
@@ -99,7 +106,9 @@ function App() {
                 id="person"
                 value={people}
                 placeholder="0"
-                className="bg-neutral-100 text-right font-bold p-2 rounded-md focus:outline-primary w-full"
+                className={
+                  "bg-neutral-100 text-right font-bold p-2 rounded-md w-full focus:outline-primary " + ((people <= 0) ? "focus:outline-red-500" : "")
+                }
                 onChange={e => setPeople(e.target.value)}
               />
             </div>
